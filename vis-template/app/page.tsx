@@ -1,103 +1,114 @@
-"use client"
-import Image from "next/image";
-import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import React from 'react'
+'use client'
+import Image from 'next/image';
+import { FC } from 'react';
+import FlourishEmbed from '@/app/components/Flourish1'
+import FlourishEmbed2 from '@/app/components/Flourish2';
 
-const user = {
-  name: 'Tom Cook',
-  email: 'tom@example.com',
-  imageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+const HomePage: FC = () => {
+  return ( 
+    <div className="bg-gray-50 bg-white shadow-md">
+        <nav className="container mx-auto flex items-center p-8">
+        <Image className='ml-[-65px]'
+          src="/favicon.png" 
+          alt="Olympic Women Participation"
+          width={40}
+          height={40}
+        />
+          <ul className="flex space-x-8 ml-16">
+            <li>
+              <a href="#" className="text-gray-900 hover:text-gray-500">Mujeres</a>
+            </li>
+            <li>
+              <a href="#" className="text-gray-900 hover:text-gray-500">Historia</a>
+            </li>
+            <li>
+              <a href="#" className="text-gray-900 hover:text-gray-500">Medallero</a>
+            </li>
+          </ul>
+        </nav>
+
+      {/* Hero Section */}
+      <section className="relative w-full h-full h-[400px]">
+        <Image
+          src="/mujeres.png" 
+          alt="Olympic Women Participation"
+          width={1600}
+          height={400}
+        />
+        <div className="absolute inset-0">
+          <div className="container mx-auto py-96 ml-96 my-16 p-96">
+            <h1 className="text-5xl font-black text-orange-500">PARTICI[PAR]</h1>
+            <p className="mt-4 text-lg text-gray-700">
+              Evolución en la participación femenina <br /> en los Juegos Olímpicos.
+            </p>
+            <p className="mt-9 text-lg font-thin text-gray-700">
+            ¿Sabías que recién en 2024 se alcanzó <br />una participación equilibrada en los <br />Juegos Olímpicos? 
+            </p>
+          </div>
+        </div>
+       
+        <Image className='mt-60 ml-64'
+          src="/swim.gif" 
+          alt="Olympic Women Participation"
+          width={1000}
+          height={1000}
+        />
+       
+        
+      </section>
+
+      {/* historia */}
+      <section className="container mx-auto py-24 pt-80 mt-[-320px]">
+        
+        <h2 className="text-3xl font-black text-center mb-6 my-16 text-orange-500">
+          ¿Cómo evolucionó la participación de mujeres?
+        </h2>
+        <p className="text-center text-lg mb-8 font-thin text-gray-600">
+          ¿Sabías que recién en 2012 todos los países <br />  presentaron al menos una mujer en la competencia?
+        </p> 
+        <div className="flex justify-center mb-8">
+        <div className="max-w-4xl w-full ">
+        < FlourishEmbed />
+        </div>
+        </div>
+        <p className="text-lg mb-4 font-thin text-gray-600 text-justify px-96">
+        Un viaje a través de los años, una evolución que recién comienza. 30 ediciones de los Juegos Olímpicos en busca de la igualdad de oportunidades y participación. Miles de mujeres a lo largo del mundo demostrando su talento y su capacidad. <br />
+        30 años más tarde podemos hablar de partici[par] por igual.
+        </p>
+        <p className="text-lg font-bold text-gray-800 text-justify px-96">
+        Conoce más
+        </p>
+      </section>
+
+      {/* medallero */}
+      <section className="container mx-auto">
+        <h2 className="text-3xl font-black text-center mb-6 text-orange-500">Medallero olímpico 2024</h2>
+        <p className="text-center mb-8 text-gray-600 text-lg font-thin">
+          ¿Sabías que recién en 2024 se alcanzó la equidad de <br /> género en la competencia?
+        </p>
+        <div className="flex justify-center mb-8">
+          
+        <div className="max-w-4xl w-full ">
+
+        </div>
+        </div>
+        <p className="text-lg mb-4 font-thin text-gray-600 text-justify px-96">
+        Miles de mujeres a lo largo del mundo mostrando una vez más lo que son capaces de hacer. Un medallero que conmociona. <br />
+        Grandes atletas batiendo récords y posicionándose en lo más alto del ranking mundial.
+        </p>
+     
+        <p className="text-lg mb-20 font-bold text-gray-800 text-justify px-96">
+        Conoce más
+        </p>
+      
+      </section>
+
+      <footer className="bg-gray-800 py-8">
+        <div className="container mx-auto text-center text-white">
+        </div>
+      </footer>
+    </div>
+  );
 };
 
-const navigation = [
-  { name: 'Mujeres', href: '#', current: true },
-  { name: 'Historia', href: '#', current: false },
-  { name: 'Evolución', href: '#', current: false },
-];
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ');
-}
-
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    <div className="min-h-full w-full">
-      <Disclosure as="nav" className="bg-white w-full">
-        {({ open }) => (
-          <>
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <div className="flex h-16 items-center justify-between">
-                <div className="flex items-center">
-                  <div className="flex-shrink-0">
-                    <img
-                      className="h-8 w-8"
-                      src="https://i.ibb.co/drgMTXJ/simbolo-de-la-letra-p.png"
-                      alt="Your Company"
-                    />
-                  </div>
-                  <div className="hidden md:block">
-                    <div className="ml-10 flex items-baseline space-x-4">
-                      {navigation.map((item) => (
-                        <a
-                          key={item.name}
-                          href={item.href}
-                          className={classNames(
-                            item.current
-                              ? 'bg-gray-200 text-gray-900' // Destacar la opción activa con el mismo estilo de hover
-                              : 'text-gray-600 hover:bg-gray-200 hover:text-gray-900',
-                            'rounded-md px-3 py-2 text-sm font-medium'
-                          )}
-                          aria-current={item.current ? 'page' : undefined}
-                        >
-                          {item.name}
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <div className="-mr-2 flex md:hidden">
-                  {/* Mobile menu button */}
-                  <Disclosure.Button className="group relative inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-600 hover:bg-gray-200 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:ring-offset-white">
-                    <span className="sr-only">Open main menu</span>
-                    {open ? (
-                      <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                    ) : (
-                      <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                    )}
-                  </Disclosure.Button>
-                </div>
-              </div>
-            </div>
-  
-            <Disclosure.Panel className="md:hidden">
-              <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
-                {navigation.map((item) => (
-                  <Disclosure.Button
-                    key={item.name}
-                    as="a"
-                    href={item.href}
-                    className={classNames(
-                      item.current
-                        ? 'bg-gray-200 text-gray-900' // Destacar la opción activa con el mismo estilo de hover
-                        : 'text-gray-600 hover:bg-gray-200 hover:text-gray-900',
-                      'block rounded-md px-3 py-2 text-base font-medium'
-                    )}
-                    aria-current={item.current ? 'page' : undefined}
-                  >
-                    {item.name}
-                  </Disclosure.Button>
-                ))}
-              </div>
-            </Disclosure.Panel>
-          </>
-        )}
-      </Disclosure>
-  
-      {/* Se elimina el título del panel */}
-      {/* Eliminar la sección del título */}
-    </div>
-  </main>
-  );
-}
+export default HomePage;
