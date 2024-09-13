@@ -1,13 +1,16 @@
 'use client'
-import Image from 'next/image';
-import { FC } from 'react';
-import FlourishEmbed from '@/app/components/Flourish1'
-import FlourishEmbed2 from '@/app/components/Flourish2';
 
-const HomePage: FC = () => {
+import dynamic from 'next/dynamic';
+import Image from 'next/image';
+import { useEffect } from 'react';
+
+const FlourishEmbed = dynamic(() => import('@/app/components/Flourish1'), { ssr: false });
+const FlourishEmbed2 = dynamic(() => import('@/app/components/Flourish2'), { ssr: false });
+
+const HomePage = () => {
   return ( 
     <div className="bg-gray-50 bg-white shadow-md">
-        <nav className="container mx-auto flex items-center p-8">
+        <div className="container mx-auto flex items-center p-8">
         <Image className='ml-[-65px]'
           src="/favicon.png" 
           alt="Olympic Women Participation"
@@ -16,23 +19,23 @@ const HomePage: FC = () => {
         />
           <ul className="flex space-x-8 ml-16">
             <li>
-              <a href="#" className="text-gray-900 hover:text-gray-500">Mujeres</a>
+              <a href="app/page.tsx" className="text-gray-900 hover:text-gray-500">Mujeres</a>
             </li>
             <li>
-              <a href="#" className="text-gray-900 hover:text-gray-500">Historia</a>
+              <a href="historia/page.tsx" className="text-gray-900 hover:text-gray-500">Historia</a>
             </li>
             <li>
-              <a href="#" className="text-gray-900 hover:text-gray-500">Medallero</a>
+              <a href="evolución/page.tsx" className="text-gray-900 hover:text-gray-500">Medallero</a>
             </li>
           </ul>
-        </nav>
+        </div>
 
       {/* Hero Section */}
-      <section className="relative w-full h-full h-[400px]">
+      <section className="relative max-w-screen-2xl h-[400px]">
         <Image
           src="/mujeres.png" 
           alt="Olympic Women Participation"
-          width={1600}
+          width={2000}
           height={400}
         />
         <div className="absolute inset-0">
@@ -45,18 +48,16 @@ const HomePage: FC = () => {
             ¿Sabías que recién en 2024 se alcanzó <br />una participación equilibrada en los <br />Juegos Olímpicos? 
             </p>
           </div>
-        </div>
-       
-        <Image className='mt-60 ml-64'
+        </div>  
+      </section>
+
+      <Image className='mt-60 ml-64'
           src="/swim.gif" 
           alt="Olympic Women Participation"
           width={1000}
           height={1000}
         />
-       
         
-      </section>
-
       {/* historia */}
       <section className="container mx-auto py-24 pt-80 mt-[-320px]">
         
@@ -75,7 +76,7 @@ const HomePage: FC = () => {
         Un viaje a través de los años, una evolución que recién comienza. 30 ediciones de los Juegos Olímpicos en busca de la igualdad de oportunidades y participación. Miles de mujeres a lo largo del mundo demostrando su talento y su capacidad. <br />
         30 años más tarde podemos hablar de partici[par] por igual.
         </p>
-        <p className="text-lg font-bold text-gray-800 text-justify px-96">
+        <p className="text-lg font-bold text-gray-800 text-justify px-96 hover:text-gray-500">
         Conoce más
         </p>
       </section>
@@ -89,6 +90,7 @@ const HomePage: FC = () => {
         <div className="flex justify-center mb-8">
           
         <div className="max-w-4xl w-full ">
+                  < FlourishEmbed2 />
 
         </div>
         </div>
@@ -97,7 +99,30 @@ const HomePage: FC = () => {
         Grandes atletas batiendo récords y posicionándose en lo más alto del ranking mundial.
         </p>
      
-        <p className="text-lg mb-20 font-bold text-gray-800 text-justify px-96">
+        <p className="text-lg mb-6 font-bold text-gray-800 text-justify px-96 hover:text-gray-500">
+        Conoce más
+        </p>
+      
+      </section>
+      <Image className='mt-8 ml-64'
+          src="/swim.gif" 
+          alt="Olympic Women Participation"
+          width={1000}
+          height={1000}
+        />
+{/* conclusión */}
+<section className="container mx-auto">
+        <h2 className="text-3xl font-black text-center mb-6 text-orange-500">Medallero olímpico 2024</h2>
+        <p className="text-center mb-8 text-gray-600 text-lg font-thin">
+          ¿Sabías que recién en 2024 se alcanzó la equidad de <br /> género en la competencia?
+        </p>
+      
+        <p className="text-lg mb-4 font-thin text-gray-600 text-justify px-96">
+        Miles de mujeres a lo largo del mundo mostrando una vez más lo que son capaces de hacer. Un medallero que conmociona. <br />
+        Grandes atletas batiendo récords y posicionándose en lo más alto del ranking mundial.
+        </p>
+     
+        <p className="text-lg mb-20 font-bold text-gray-800 text-justify px-96 hover:text-gray-500">
         Conoce más
         </p>
       

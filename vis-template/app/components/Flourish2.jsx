@@ -14,7 +14,8 @@ const FlourishEmbed2 = () => {
   }, []);
 
   return (
-    <div className="flourish-embed flourish-scatter" data-src="visualisation/19245290"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/19245290/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
+    <div className="flourish-embed flourish-scatter" data-src="visualisation/19245290">
+        <noscript><img src="https://public.flourish.studio/visualisation/19245290/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
   );
 };
 
