@@ -10,22 +10,22 @@ const FlourishEmbed2 = dynamic(() => import('@/app/components/Flourish2'), { ssr
 const HomePage = () => {
   return ( 
     <div className="bg-gray-50 bg-white shadow-md">
-        <div className="container mx-auto flex items-center p-8">
-        <Image className='ml-[-65px]'
-          src="/favicon.png" 
+        <div className="container mx-auto flex items-center p-4">
+        <Image className='ml-[-50px]'
+          src="/logo_par.svg" 
           alt="Olympic Women Participation"
-          width={40}
-          height={40}
+          width={45}
+          height={45}
         />
           <ul className="flex space-x-8 ml-16">
             <li>
-              <a href="app/page.tsx" className="text-gray-900 hover:text-gray-500">Mujeres</a>
+              <a href="app/page.tsx" className="bg-gray-200 hover:bg-grey-300 text-gray-500 rounded px-2 py-1">Mujeres</a>
             </li>
             <li>
-              <a href="historia/page.tsx" className="text-gray-900 hover:text-gray-500">Historia</a>
+              <a href="historia/page.tsx" className="text-gray-500 hover:text-gray-500">Historia</a>
             </li>
             <li>
-              <a href="evolución/page.tsx" className="text-gray-900 hover:text-gray-500">Medallero</a>
+              <a href="evolución/page.tsx" className="text-gray-500 hover:text-gray-500">Medallero</a>
             </li>
           </ul>
         </div>
@@ -35,12 +35,14 @@ const HomePage = () => {
         <Image
           src="/mujeres.png" 
           alt="Olympic Women Participation"
-          width={2000}
+          width={1600}
           height={400}
+          layout="responsive" 
+          quality={100} 
         />
         <div className="absolute inset-0">
-          <div className="container mx-auto py-96 ml-96 my-40 p-96">
-            <h1 className="text-5xl font-black text-orange-500">PARTICI[PAR]</h1>
+          <div className="container mx-auto py-[400px] ml-96 my-40 p-96">
+            <h1 className="text-5xl font-black text-blue-500">PARTICI[PAR]</h1>
             <p className="mt-4 text-lg text-gray-700">
               Evolución en la participación femenina <br /> en los Juegos Olímpicos.
             </p>
@@ -51,11 +53,13 @@ const HomePage = () => {
         </div>  
       </section>
 
-      <Image className='mt-60 ml-64'
-          src="/swim.gif" 
+      <Image className='mt-[350px]'
+          src="/tenis.png" 
           alt="Olympic Women Participation"
-          width={1000}
+          width={1600}
           height={1000}
+          layout="responsive" 
+          quality={100} 
         />
         
       {/* historia */}
@@ -106,11 +110,13 @@ const HomePage = () => {
         </button>
       
       </section>
-      <Image className='mt-5 ml-64'
-          src="/swim.gif" 
+      <Image className='mt-[80px] mb-16'
+          src="/gimnasia.png" 
           alt="Olympic Women Participation"
-          width={1000}
+          width={1600}
           height={1000}
+          layout="responsive" 
+          quality={100} 
         />
 {/* conclusión */}
 <section className="container mx-auto">
@@ -137,6 +143,8 @@ const HomePage = () => {
           alt="Olympic Women Participation"
           height={400}
           width={1600}
+          layout="responsive" 
+          quality={100} 
         />
         </div>
       </footer>
