@@ -47,7 +47,37 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="bg-gray-50 bg-white shadow-md">
+        <div className="container mx-auto flex items-center p-4">
+        <Image className='ml-[-50px]'
+          src="/logo_par.svg" 
+          alt="Olympic Women Participation"
+          width={45}
+          height={45}
+        />
+          <ul className="flex space-x-8 ml-16">
+            <li>
+              <a href="app/page.tsx" className="text-[#5F1BBF]">Mujeres</a>
+            </li>
+            <li>
+              <a href="historia/page.tsx" className="text-[#5F1BBF]">Historia</a>
+            </li>
+            <li>
+              <a href="evolución/page.tsx" className="bg-violet-100 hover:bg-violet-300 text-[#5F1BBF] rounded px-2 py-1">Medallero</a>
+            </li>
+          </ul>
+        </div>
+        <section>
+        <Image
+          src="/headerJJOO.png" 
+          alt="Olympic Women Participation"
+          width={1600}
+          height={400}
+          layout="responsive" 
+          quality={100} 
+        />
+        </section>
+    <div className="min-h-screen bg-white">
       <div className="container mx-auto py-12">
         <h1 className="text-4xl font-bold text-center text-[#5F1BBF]">
           Top 5 mujeres 
@@ -61,6 +91,7 @@ export default function Home() {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 }
