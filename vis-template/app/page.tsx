@@ -10,7 +10,7 @@ const FlourishEmbed2 = dynamic(() => import('@/app/components/Flourish2'), { ssr
 const HomePage = () => {
   return ( 
     <div className="bg-gray-50 bg-white shadow-md">
-        <div className="container mx-auto flex items-center p-4">
+      <div className="container mx-auto flex items-center p-4 z-40">
         <Image className='ml-[-50px]'
           src="/logo_par.svg" 
           alt="Olympic Women Participation"
@@ -29,7 +29,7 @@ const HomePage = () => {
             </li>
           </ul>
         </div>
-
+      
       {/* Hero Section */}
       <section>
         <Image
@@ -39,6 +39,7 @@ const HomePage = () => {
           height={400}
           layout="responsive" 
           quality={100} 
+          className="z-10"
         />
         <div className="absolute inset-0">
           <div className="container mx-auto py-[400px] ml-96 my-40 p-96">

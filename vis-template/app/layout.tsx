@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from 'next/image';
 import { Raleway } from "next/font/google";
 import "./globals.css";
 //cambiar la tipografia
