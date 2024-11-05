@@ -1,9 +1,15 @@
-import Image from "next/image";
+import React from 'react';
+import dynamic from 'next/dynamic';
+import Image from 'next/image';
+import HorizontalTimeline from './HorizontalTimeline';
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
- 
-    </main>
+    <div className="bg-white">
+      <HorizontalTimeline />
+    </div>
   );
-}
+};
+
+export default Home;
+
