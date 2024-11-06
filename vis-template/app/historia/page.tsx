@@ -24,16 +24,8 @@ const Home: React.FC = () => {
   </div>
 </section>
 
-<h1 className="font-bold text-5xl text-center mt-16"> TOP MUJERES </h1>
-    <h4 className="text-center mb-4"> destacadas en los Juegos Olímpicos 2024</h4>
-    <h4 className="text-center text-sm font-bold mb-2"> medallas </h4>
-    <Image 
-          src="/medallasinicio-43.png" 
-          alt="Olympic Women Participation"
-          width={200}
-          height={200}
-          className="z-10 ml-[620px]"
-        />
+<h1 className="font-bold text-3xl text-center mt-16 mb-8"> "La promoción del respsto <br /> y la igualdad" </h1>
+    <h4 className="text-center text-sm mb-4"> -Carta Olímpica del Comité Olímpico Internacional</h4>
 
       {/* Línea de Tiempo */}
       <HorizontalTime />

@@ -61,29 +61,51 @@ const HorizontalTime: React.FC = () => {
           style={{ width: "500vw" }} // Línea de tiempo mucho más ancha que el viewport
         >
           {/* Año 1900 */}
-          <div className="w-screen flex-shrink-0">
-            <div className="text-purple-800 text-3xl font-bold">1900</div>
-            <p className="mt-2 text-gray-700">
-              Las mujeres fueron incluidas por primera vez en los Juegos Olímpicos en tenis y golf.
+          <div className="w-screen flex-shrink-0 ml-16">
+            <div className="text-purple-800 text-7xl font-extrabold ml-[400px]">1900</div>
+            <p className="mt-2 text-purple-800 text-4xl font-extrabold ml-[400px]">
+              Las mujeres <br /> fueron incluidas <br /> por primera vez
             </p>
-            <img
-              src="/image-1900.jpg"
-              alt="1900"
-              className="mt-4 w-full h-40 object-cover"
-            />
+            <p className="mt-2 text-black text-lg ml-[400px]">
+            Aunque los Juegos Olímpicos de 1896 <br /> no permitieron la participación femenina, 
+            </p>
+            <p className="mt-2 text-black text-3xl ml-[400px]">
+            en 1900 las mujeres participan por <br /> primera vez en deportes como el <br /> tenis y el golf. 
+            </p>
+            <p className="mt-2 text-black text-sm ml-[400px]">
+            De las 997 personas participantes, solo  22 fueron mujeres, representando <br /> un pequeño pero significativo paso hacia la inclusión femenina en el evento <br /> deportivo más prestigioso del mundo. 
+            </p>
+            <Image 
+          src="/1900.png" 
+          alt="Olympic Women Participation"
+          width={350}
+          height={200}
+          className="mt-[-430px] rounded-xl"
+        />
           </div>
 
-          {/* Año 1928 */}
-          <div className="w-screen flex-shrink-0">
-            <div className="text-purple-800 text-3xl font-bold">1928</div>
-            <p className="mt-2 text-gray-700">
-              Incluidas por primera vez en el atletismo.
+          {/* Año 1900 */}
+          <div className="w-screen flex-shrink-0 ml-16">
+            <div className="text-purple-800 text-7xl font-extrabold ml-[400px]">1900</div>
+            <p className="mt-2 text-purple-800 text-4xl font-extrabold ml-[400px]">
+              Las mujeres <br /> fueron incluidas <br /> por primera vez
             </p>
-            <img
-              src="/image-1928.jpg"
-              alt="1928"
-              className="mt-4 w-full h-40 object-cover"
-            />
+            <p className="mt-2 text-black text-lg ml-[400px]">
+            Aunque los Juegos Olímpicos de 1896 <br /> no permitieron la participación femenina, 
+            </p>
+            <p className="mt-2 text-black text-3xl ml-[400px]">
+            en 1900 las mujeres participan por <br /> primera vez en deportes como el <br /> tenis y el golf. 
+            </p>
+            <p className="mt-2 text-black text-sm ml-[400px]">
+            De las 997 personas participantes, solo  22 fueron mujeres, representando <br /> un pequeño pero significativo paso hacia la inclusión femenina en el evento <br /> deportivo más prestigioso del mundo. 
+            </p>
+            <Image 
+          src="/1900.png" 
+          alt="Olympic Women Participation"
+          width={350}
+          height={200}
+          className="mt-[-430px] rounded-xl"
+        />
           </div>
 
           {/* Año 1981 */}
