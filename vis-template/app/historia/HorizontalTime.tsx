@@ -84,20 +84,20 @@ const HorizontalTime: React.FC = () => {
         />
           </div>
 
-          {/* Año 1900 */}
+          {/* Año 1928 */}
           <div className="w-screen flex-shrink-0 ml-16">
-            <div className="text-purple-800 text-7xl font-extrabold ml-[400px]">1900</div>
+            <div className="text-purple-800 text-7xl font-extrabold ml-[400px]">1928</div>
             <p className="mt-2 text-purple-800 text-4xl font-extrabold ml-[400px]">
-              Las mujeres <br /> fueron incluidas <br /> por primera vez
+              Incluidas por <br /> primera vez <br /> en atletismo
             </p>
             <p className="mt-2 text-black text-lg ml-[400px]">
-            Aunque los Juegos Olímpicos de 1896 <br /> no permitieron la participación femenina, 
+            Los Juegos Olímpicos de Amsterdam
             </p>
             <p className="mt-2 text-black text-3xl ml-[400px]">
-            en 1900 las mujeres participan por <br /> primera vez en deportes como el <br /> tenis y el golf. 
+            Fueron los primeros en incluir <br /> competencias de atletismo <br /> para mujeres. 
             </p>
             <p className="mt-2 text-black text-sm ml-[400px]">
-            De las 997 personas participantes, solo  22 fueron mujeres, representando <br /> un pequeño pero significativo paso hacia la inclusión femenina en el evento <br /> deportivo más prestigioso del mundo. 
+            un deporte históricamente dominado por hombres. Las atletas  compitieron <br /> en disciplinas como los 100 metros y el lanzamiento  de disco.  Sin embargo, <br /> las reacciones a su participación en pruebas  de resistencia reflejaron prejuicios <br /> persistentes sobre la capacidad física femenina.
             </p>
             <Image 
           src="/1900.png" 
@@ -108,12 +108,28 @@ const HorizontalTime: React.FC = () => {
         />
           </div>
 
-          {/* Año 1981 */}
-          <div className="w-screen flex-shrink-0">
-            <div className="text-purple-800 text-3xl font-bold">1981</div>
-            <p className="mt-2 text-gray-700">
-              Creación de la Comisión de Mujeres en el Deporte en el COI.
+          {/* Año 1928 */}
+          <div className="w-screen flex-shrink-0 ml-16">
+            <div className="text-purple-800 text-7xl font-extrabold ml-[400px]">1981</div>
+            <p className="mt-2 text-purple-800 text-4xl font-extrabold ml-[400px]">
+            Creación de la <br /> Comisión de Muejeres <br /> en el Deporte en el COI
             </p>
+            <p className="mt-2 text-black text-lg ml-[400px]">
+            Los Juegos Olímpicos de Amsterdam
+            </p>
+            <p className="mt-2 text-black text-3xl ml-[400px]">
+            Fueron los primeros en incluir <br /> competencias de atletismo <br /> para mujeres. 
+            </p>
+            <p className="mt-2 text-black text-sm ml-[400px]">
+            un deporte históricamente dominado por hombres. Las atletas  compitieron <br /> en disciplinas como los 100 metros y el lanzamiento  de disco.  Sin embargo, <br /> las reacciones a su participación en pruebas  de resistencia reflejaron prejuicios <br /> persistentes sobre la capacidad física femenina.
+            </p>
+            <Image 
+          src="/1900.png" 
+          alt="Olympic Women Participation"
+          width={350}
+          height={200}
+          className="mt-[-430px] rounded-xl"
+        />
           </div>
 
           {/* Año 1991 */}
