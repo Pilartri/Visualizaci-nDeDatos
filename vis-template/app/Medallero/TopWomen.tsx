@@ -79,13 +79,13 @@ export const TopWomen: React.FC = () => (
         />
           <ul className="flex space-x-8 ml-16">
             <li>
-              <a href="app/page.tsx" className="text-[#5F1BBF] hover:text-[#5F1BBF]">Mujeres</a>
+              <a href="" className="text-[#5F1BBF] hover:text-[#5F1BBF]">Mujeres</a>
             </li>
             <li>
-              <a href="historia/page.tsx" className="bg-violet-100 hover:bg-violet-300 text-[#5F1BBF] rounded px-2 py-1">Historia</a>
+              <a href="historia" className="text-[#5F1BBF] hover:text-[#5F1BBF]">Historia</a>
             </li>
             <li>
-              <a href="evolución/page.tsx" className="text-[#5F1BBF] hover:text-[#5F1BBF]">Medallero</a>
+              <a href="medallero" className="bg-violet-100 hover:bg-violet-300 text-[#5F1BBF] rounded px-2 py-1">Medallero</a>
             </li>
           </ul>
         </div>

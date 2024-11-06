@@ -33,9 +33,9 @@ const HomePage = () => {
           className="ml-[-50px]"
         />
         <ul className="flex space-x-8 ml-16">
-          <li><a href="app/page.tsx" className="bg-violet-100 hover:bg-violet-300 text-[#5F1BBF] rounded px-2 py-1">Mujeres</a></li>
-          <li><a href="historia/page.tsx" className="text-[#5F1BBF] hover:text-violet-700">Historia</a></li>
-          <li><a href="evolución/page.tsx" className="text-[#5F1BBF] hover:text-violet-700">Medallero</a></li>
+          <li><a href="app" className="bg-violet-100 hover:bg-violet-300 text-[#5F1BBF] rounded px-2 py-1">Mujeres</a></li>
+          <li><a href="historia" className="text-[#5F1BBF] hover:text-violet-700">Historia</a></li>
+          <li><a href="medallero" className="text-[#5F1BBF] hover:text-violet-700">Medallero</a></li>
         </ul>
       </header>
       
@@ -44,7 +44,7 @@ const HomePage = () => {
       <section className="relative">
         <div className="parallax scroll-element" data-speed="0.3" style={{ backgroundImage: 'url(/headerJJOO.png)', backgroundSize: 'contain', height: '400px', backgroundAttachment: 'fixed' }}>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-            <h1 className="text-4xl sm:text-5xl font-black text-[#5F1BBF] mt-[800px]">PARTICI[PAR]</h1>
+            <h1 className="text-4xl sm:text-5xl font-black text-[#5F1BBF] mt-[700px]">PARTICI[PAR]</h1>
             <p className="mt-4 text-lg sm:text-xl text-gray-700">Evolución en la participación femenina en los Juegos Olímpicos.</p>
             <p className="mt-4 text-lg font-thin text-gray-700">¿Sabías que recién en 2024 se alcanzó una participación equilibrada <br /> en los Juegos Olímpicos?</p>
           </div>

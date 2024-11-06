@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 
-const HorizontalTimeline: React.FC = () => {
+const HorizontalTime: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isInsideSection, setIsInsideSection] = useState(false);
 
@@ -10,15 +10,10 @@ const HorizontalTimeline: React.FC = () => {
     const handleScroll = (e: WheelEvent) => {
       // Solo prevenir el scroll vertical cuando estamos dentro de la sección de la línea de tiempo
       if (isInsideSection && sectionRef.current) {
-        // Detecta si el scroll es hacia abajo o hacia arriba
-        if (e.deltaY > 0) {
-          // Scroll hacia abajo -> desplazamiento horizontal
-          e.preventDefault(); // Evita el scroll vertical dentro de la sección
-          sectionRef.current.scrollLeft += e.deltaY;
-        } else if (e.deltaY < 0) {
-          // Scroll hacia arriba -> desplazamiento vertical (comportamiento normal)
-          return;
-        }
+        e.preventDefault(); // Evita el scroll vertical dentro de la sección
+
+        // Scroll horizontal en base al deltaY (movimiento del scroll vertical)
+        sectionRef.current.scrollLeft += e.deltaY;
       }
     };
 
@@ -125,7 +120,4 @@ const HorizontalTimeline: React.FC = () => {
   );
 };
 
-export default HorizontalTimeline;
-
-
-
+export default HorizontalTime;
