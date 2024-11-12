@@ -14,7 +14,7 @@ const Home: React.FC = () => {
   <section className="pt-20">
   <div className="relative w-full">
     <Image
-      src="/medalleros.png"
+      src="/historias.png"
       alt="Olympic Women Participation"
       layout="responsive"  // "responsive" ajusta el tamaño a las pantallas
       width={1000}
@@ -24,7 +24,7 @@ const Home: React.FC = () => {
   </div>
 </section>
 
-<h1 className="font-bold text-3xl text-center mt-16 mb-8"> "La promoción del respsto <br /> y la igualdad" </h1>
+<h1 className="text-center mt-16 mb-8 text-purple-800 text-5xl font-extrabold"> "La promoción del respsto <br /> y la igualdad" </h1>
     <h4 className="text-center text-sm mb-4"> -Carta Olímpica del Comité Olímpico Internacional</h4>
 
       {/* Línea de Tiempo */}

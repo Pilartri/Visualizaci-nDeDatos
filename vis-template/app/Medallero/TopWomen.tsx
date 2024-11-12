@@ -8,6 +8,7 @@ type AthleteProps = {
   name: string;
   sport: string;
   country: string;
+  imagePrl: string;
   medals: number[];
   description: string;
   imageSrc: string;
@@ -21,6 +22,7 @@ const athletes: AthleteProps[] = [
     imageTop: "/medalla-40.png",
     country: "Estados Unidos",
     medals: [1, 1, 2],
+    imagePrl: "/gim.png",
     description: "Biles regresó de su pausa y dominó los Juegos Olímpicos, reafirmando su lugar como una de las mejores gimnastas de todos los tiempos. Ganó oro en la competencia general individual, viga de equilibrio y equipo, además de una plata en suelo. Su retorno después de haber tomado tiempo para priorizar su salud mental es ampliamente celebrado",
     imageSrc: "/simone.png",
   },
@@ -30,6 +32,7 @@ const athletes: AthleteProps[] = [
     sport: "Judo",
     imageTop: "/clarissemedalla.png",
     country: "Francia",
+    imagePrl: "/jud.png",
     medals: [1, 1, 2],
     description: "Clarisse Agbegnenou se consolidó como una de las mejores judocas de la historia al ganar dos medallas de oro, una en judo individual y otra en el evento por equipos. Con cinco títulos mundiales en su haber, Agbegnenou es conocida por su tenacidad y su papel como defensora de la igualdad de género en el deporte",
     imageSrc: "/clarisse.png",
@@ -41,6 +44,7 @@ const athletes: AthleteProps[] = [
     sport: "Natación",
     imageTop: "/emmamedalla.png",
     country: "Australia",
+    imagePrl: "/natacion.png",
     medals: [1, 1, 2],
     description: "McKeon mantuvo su increíble racha en París, consiguiendo medallas tanto en eventos individuales como en relevos. Se destacó especialmente en los 100 metros libres y en el relevo 4x100​",
     imageSrc: "/mckeon.png",
@@ -51,6 +55,7 @@ const athletes: AthleteProps[] = [
     sport: "Tiro al blanco",
     imageTop: "/ansanmedalla.png",
     country: "Corea del Sur",
+    imagePrl: "/arco.png",
     medals: [1, 1, 2],
     description: "An San continuó su dominio en tiro con arco, destacándose tanto en las competiciones individuales como en las de equipo, reafirmando su estatus como una de las mejores en su disciplina​",
     imageSrc: "/san.png",
@@ -61,6 +66,7 @@ const athletes: AthleteProps[] = [
     sport: "Natación",
     imageTop: "/medallas-44.png",
     country: "Estados Unidos",
+    imagePrl: "/natacion.png",
     medals: [1, 1, 2],
     description: "Ledecky continuó su reinado en las largas distancias, ganando oro en los 800 y 1500 metros libres. También consiguió dos platas en relevos, consolidándose como una de las nadadoras más laureadas en la historia olímpica​",
     imageSrc: "/ledecky.png",
@@ -103,7 +109,7 @@ export const TopWomen: React.FC = () => (
         />
       </section>
    
-    <h1 className="font-bold text-5xl text-center mt-16"> TOP MUJERES </h1>
+    <h1 className="font-extrabold text-5xl text-purple-800 text-center mt-16"> TOP MUJERES </h1>
     <h4 className="text-center mb-4"> destacadas en los Juegos Olímpicos 2024</h4>
     <h4 className="text-center text-sm font-bold mb-2"> medallas </h4>
     <Image 
@@ -131,6 +137,7 @@ export const TopWomen: React.FC = () => (
           <p className="underline mt-4 text-lg;">{athlete.country}</p>
           <div className="flex justify-left mt-2 space-x-2">
           </div>
+          < Image src={athlete.imagePrl} alt={athlete.name} width={100} height={200} className="rounded-lg mx-auto" />
           <p className="mt-4 max-w-md mx-auto mb-24">{athlete.description}</p>
         </motion.div>
       ))}
