@@ -1,6 +1,7 @@
 'use client'
 
 import dynamic from 'next/dynamic';
+import StickyImage from './sticky';  
 import Image from 'next/image';
 import { useEffect } from 'react';
 
@@ -68,12 +69,16 @@ const HomePage = () => {
         <p className="text-lg mb-4 font-thin text-gray-600 text-center px-6 md:px-32">
           Un viaje a través de los años, una evolución que recién comienza. <br /> <b> 30 ediciones de los Juegos Olímpicos </b> en busca de la igualdad <br /> de oportunidades y participación.
         </p>
+        <StickyImage src="/gim.png" alt="Gim"/>
         <div className="flex justify-center">
+        <a href="historia"> 
           <button className="bg-[#5F1BBF] hover:bg-violet-300 text-white font-bold py-2 px-4 rounded mt-4">
-            Conocé más
+            Conocé más 
           </button>
+          </a>
         </div>
       </section>
+    
 
       {/* Medallero */}
       <section className="container mx-auto py-24">
@@ -87,13 +92,14 @@ const HomePage = () => {
           </div>
         </div>
         <p className="text-lg font-thin text-gray-600 text-center px-6 md:px-32">
-        Miles de mujeres a lo largo del mundo mostrando una vez más lo que son capaces de hacer. <br /> <b> Un medallero que conmociona.</b>
-        Grandes atletas batiendo récords <br /> y posicionándose en lo más alto del ranking mundial.
+        Miles de mujeres a lo largo del mundo mostrando una vez más lo que son capaces<br />de hacer. <b> Un medallero que conmociona.</b> Grandes atletas batiendo récords <br /> y posicionándose en lo más alto del ranking mundial.
         </p>
         <div className="flex justify-center">
+        <a href="medallero"> 
           <button className="bg-[#5F1BBF] hover:bg-violet-300 text-white font-bold py-2 px-4 rounded mt-4">
             Conocé más
           </button>
+          </a>
         </div>
       </section>
 
