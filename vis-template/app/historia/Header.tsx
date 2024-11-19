@@ -14,7 +14,7 @@ const Header: React.FC = () => {
         />
         <ul className="flex space-x-8 ml-16">
           <li>
-            <a href="page" className="text-[#5F1BBF] hover:text-[#5F1BBF]">
+            <a href="/" className="text-[#5F1BBF] hover:text-[#5F1BBF]">
               Mujeres
             </a>
           </li>
