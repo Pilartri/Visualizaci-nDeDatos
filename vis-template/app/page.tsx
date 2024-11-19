@@ -58,10 +58,11 @@ const HomePage = () => {
         <h2 className="text-3xl md:text-4xl font-black text-center mb-6 text-[#5F1BBF]">
           ¿Cómo evolucionó la <br /> participación de mujeres?
         </h2>
-        <p className="text-center text-lg sm:text-base mb-8 font-thin text-gray-600">
+        <p className="text-center text-lg sm:text-base font-thin text-gray-600">
           ¿Sabías que recién en 2012 todos los países presentaron <br /> al menos una mujer en la competencia?
         </p> 
-        <div className="flex justify-center mb-8">
+        <StickyImage src="/sabiasque_1.png" alt="Gim"/>
+        <div className="flex justify-center mb-8 mt-[-60px]">
           <div className="max-w-4xl w-full">
             <FlourishEmbed />
           </div>
@@ -69,7 +70,6 @@ const HomePage = () => {
         <p className="text-lg mb-4 font-thin text-gray-600 text-center px-6 md:px-32">
           Un viaje a través de los años, una evolución que recién comienza. <br /> <b> 30 ediciones de los Juegos Olímpicos </b> en busca de la igualdad <br /> de oportunidades y participación.
         </p>
-        <StickyImage src="/gim.png" alt="Gim"/>
         <div className="flex justify-center">
         <a href="historia"> 
           <button className="bg-[#5F1BBF] hover:bg-violet-300 text-white font-bold py-2 px-4 rounded mt-4">
@@ -77,16 +77,21 @@ const HomePage = () => {
           </button>
           </a>
         </div>
+        <div className='ml-[1000px]'> 
+        <StickyImage src="/sabiasque_2.png" alt="Gim"/>
+        </div>
+      
       </section>
     
 
       {/* Medallero */}
-      <section className="container mx-auto py-24">
+      <section className="container mx-auto py-24 mt-[-50px]">
         <h2 className="text-3xl md:text-4xl font-black text-center mb-6 text-[#5F1BBF]">Medallero olímpico 2024</h2>
         <p className="text-center mb-8 text-gray-600 text-lg font-thin">
           ¿Sabías que recién en 2024 se alcanzó <br /> la equidad de género en la competencia?
         </p>
-        <div className="flex justify-center mb-8">
+        <StickyImage src="/sabiasque_3.png" alt="Gim"/>
+        <div className="flex justify-center mb-8 mt-[-60px]">
           <div className="max-w-4xl w-full">
             <FlourishEmbed2 />
           </div>
@@ -101,10 +106,13 @@ const HomePage = () => {
           </button>
           </a>
         </div>
+        <div className='ml-[1000px]'> 
+        <StickyImage src="/sabiasque_4.png" alt="Gim"/>
+        </div>
       </section>
 
       {/* Separador */}
-      <div className="flex justify-center mt-16">
+      <div className="flex justify-center mt-[-60px]">
         <Image 
           src="./separadores-20.svg" 
           alt="Separador"
@@ -125,6 +133,9 @@ const HomePage = () => {
           <button className="bg-[#5F1BBF] hover:bg-violet-300 text-white font-bold py-2 px-4 rounded mt-8">
             Conocé más sobre esta historia
           </button>
+        </div>
+        <div className='ml-[490px]'> 
+        <StickyImage src="/sabiasque_5.png" alt="Gim"/>
         </div>
       </section>
 

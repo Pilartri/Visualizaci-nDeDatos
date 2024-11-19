@@ -228,7 +228,7 @@ const HorizontalTime: React.FC = () => {
             Este logro no solo refleja el crecimiento y la participación de <br /> las mujeres en el deporte, sino que también representa un <br /> compromiso por parte de los organizadores de promover la <br /> igualdad de oportunidades en el ámbito deportivo. 
             </p>
             <p className="mt-2 text-black text-sm ml-[400px]">
-            Este logro no solo refleja el crecimiento y la participación de <br /> las mujeres en el deporte, sino que también representa un <br /> compromiso por parte de los organizadores. 
+            Este logro fue celebrado por el Comité Olímpico Internacional <br /> (COI) y se considera uno de los momentos más importantes en la historia de <br /> la mujer en el deporte.
             </p>
 
 

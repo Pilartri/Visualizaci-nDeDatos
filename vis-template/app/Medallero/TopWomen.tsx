@@ -46,7 +46,7 @@ const athletes: AthleteProps[] = [
     country: "Australia",
     imagePrl: "/natacion.png",
     medals: [1, 1, 2],
-    description: "McKeon mantuvo su increíble racha en París, consiguiendo medallas tanto en eventos individuales como en relevos. Se destacó especialmente en los 100 metros libres y en el relevo 4x100​",
+    description: "McKeon mantuvo su increíble racha en París, consiguiendo medallas tanto en eventos individuales como en relevos. Se destacó especialmente en los 100 metros libres y en el relevo 4x100. Fue ganadora de siete medallas en los Juegos Olímpicos de Tokio 2020, la mayor cantidad de una nadadora en unos mismos Juegos Olímpicos y la mayor cantidad de medallas en cualquier deporte para una mujer en unos mismos Juegos Olímpicos. McKeon se fue de Japón como la atleta olímpica más condecorada en los Juegos Olímpicos de 2020.​",
     imageSrc: "/mckeon.png",
   },
   
@@ -68,7 +68,7 @@ const athletes: AthleteProps[] = [
     country: "Estados Unidos",
     imagePrl: "/natacion.png",
     medals: [1, 1, 2],
-    description: "Ledecky continuó su reinado en las largas distancias, ganando oro en los 800 y 1500 metros libres. También consiguió dos platas en relevos, consolidándose como una de las nadadoras más laureadas en la historia olímpica​",
+    description: "Ledecky continuó su reinado en las largas distancias, ganando oro en los 800 y 1500 metros libres. También consiguió dos platas en relevos, consolidándose como una de las nadadoras más laureadas en la historia olímpica.Ledecky, que sólo tiene 27 años, no ha bajado el ritmo. En junio de este año hizo historia al convertirse en la primera mujer en ganar cuatro títulos en unas mismas pruebas olímpicas de natación en Estados Unidos.​",
     imageSrc: "/ledecky.png",
   },
   
@@ -138,7 +138,7 @@ export const TopWomen: React.FC = () => (
           <div className="flex justify-left mt-2 space-x-2">
           </div>
           < Image src={athlete.imagePrl} alt={athlete.name} width={100} height={200} className="rounded-lg mx-auto" />
-          <p className="mt-4 max-w-md mx-auto mb-24">{athlete.description}</p>
+          <p className="mt-4 max-w-lg mx-auto mb-24">{athlete.description}</p>
         </motion.div>
       ))}
     </section>
