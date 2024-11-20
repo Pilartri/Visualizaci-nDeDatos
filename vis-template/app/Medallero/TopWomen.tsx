@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Header from "./Header";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -75,27 +76,9 @@ const athletes: AthleteProps[] = [
 ];
 
 export const TopWomen: React.FC = () => (
-  <div className="bg-gray-50 bg-white text-black">
-   <div className="container mx-auto flex items-center p-4 z-40">
-        <Image className='ml-[-50px]'
-          src="/logo_par.svg" 
-          alt="Olympic Women Participation"
-          width={45}
-          height={45}
-        />
-          <ul className="flex space-x-8 ml-16">
-            <li>
-              <a href="" className="text-[#5F1BBF] hover:text-[#5F1BBF]">Mujeres</a>
-            </li>
-            <li>
-              <a href="historia" className="text-[#5F1BBF] hover:text-[#5F1BBF]">Historia</a>
-            </li>
-            <li>
-              <a href="medallero" className="bg-violet-100 hover:bg-violet-300 text-[#5F1BBF] rounded px-2 py-1">Medallero</a>
-            </li>
-          </ul>
-        </div>
-      
+  <div className="bg-white">
+       {/* Header Fijo */}
+       <Header />
       {/* Hero Section */}
       <section>
         <Image
@@ -105,7 +88,7 @@ export const TopWomen: React.FC = () => (
           height={400}
           layout="responsive" 
           quality={100} 
-          className="z-10"
+          className="z-10 mt-24"
         />
       </section>
    
@@ -142,6 +125,11 @@ export const TopWomen: React.FC = () => (
         </motion.div>
       ))}
     </section>
+    <footer className="py-8 bg-gray-100">
+        <div className="container mx-auto text-center text-gray-600">
+          &copy; {new Date().getFullYear()} Participación Olímpica. Todos los derechos reservados.
+        </div>
+      </footer>
   </div>
 );
 export default TopWomen;

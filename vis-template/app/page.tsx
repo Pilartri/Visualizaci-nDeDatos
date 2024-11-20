@@ -34,7 +34,7 @@ const HomePage = () => {
           className="ml-[-50px]"
         />
         <ul className="flex space-x-8 ml-16">
-          <li><a href="app" className="bg-violet-100 hover:bg-violet-300 text-[#5F1BBF] rounded px-2 py-1">Mujeres</a></li>
+          <li><a href="/" className="bg-violet-100 hover:bg-violet-300 text-[#5F1BBF] rounded px-2 py-1">Mujeres</a></li>
           <li><a href="historia" className="text-[#5F1BBF] hover:text-violet-700">Historia</a></li>
           <li><a href="medallero" className="text-[#5F1BBF] hover:text-violet-700">Medallero</a></li>
         </ul>

@@ -6,8 +6,8 @@ import "./globals.css";
 const inter = Raleway ({ subsets: ["latin"] });
 //cambiar título y descripción para la busqueda en google
 export const metadata: Metadata = {
-  title: "Participar",
-  description: "La promoción del respsto y la igualdad",
+  title: "Partici[par]",
+  description: "La promoción del respeto y la igualdad",
 };
 
 export default function RootLayout({
