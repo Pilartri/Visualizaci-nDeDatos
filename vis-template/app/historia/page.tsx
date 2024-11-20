@@ -24,10 +24,10 @@ const Home: React.FC = () => {
     />
   </div>
 </section>
-<StickyImage src="/sabiasque_1.png" alt="Gim"/>
+<StickyImage src="/femenino_JJOO.png" alt="Gim"/>
 
-<h1 className="text-center mt-16 mb-8 text-purple-800 text-5xl font-extrabold"> "La promoción del respeto <br /> y la igualdad" </h1>
-    <h4 className="text-center text-sm mb-4"> -Carta Olímpica del Comité Olímpico Internacional</h4>
+<h1 className="text-center mt-8 mb-4 text-purple-800 text-4xl font-black"> "LA PROMOCIÓN DEL RESPETO <br /> Y LA IGUALDAD" </h1>
+    <h4 className="text-center text-sm mb-4"> Carta Olímpica del Comité Olímpico Internacional</h4>
 
       {/* Línea de Tiempo */}
       <HorizontalTime />

@@ -36,7 +36,7 @@ const StickyImage = ({ src, alt }: StickyImageProps) => {
         zIndex: 10, // Asegura que esté sobre otros elementos
       }}
     >
-      <Image src={src} alt={alt} width={300} height={500} priority />
+      <Image src={src} alt={alt} width={80} height={500} priority />
     </div>
   );
 };

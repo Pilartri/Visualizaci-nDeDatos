@@ -2,6 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import StickyImage from './sticky';  
+import Header from "./Header";
 import Image from 'next/image';
 import { useEffect } from 'react';
 
@@ -25,25 +26,13 @@ const HomePage = () => {
 
   return (
     <div className="bg-gray-50 bg-white shadow-md">
-      <header className="container mx-auto flex items-center p-4 z-40">
-        <Image 
-          src="/logo_par.svg" 
-          alt="Olympic Women Participation"
-          width={45}
-          height={45}
-          className="ml-[-50px]"
-        />
-        <ul className="flex space-x-8 ml-16">
-          <li><a href="/" className="bg-violet-100 hover:bg-violet-300 text-[#5F1BBF] rounded px-2 py-1">Mujeres</a></li>
-          <li><a href="historia" className="text-[#5F1BBF] hover:text-violet-700">Historia</a></li>
-          <li><a href="medallero" className="text-[#5F1BBF] hover:text-violet-700">Medallero</a></li>
-        </ul>
-      </header>
-      
+    
+       {/* Header Fijo */}
+       <Header />
 
       {/* Hero Section with Parallax */}
       <section className="relative">
-        <div className="parallax scroll-element" data-speed="0.3" style={{ backgroundImage: 'url(/headerJJOO.png)', backgroundSize: 'contain', height: '400px', backgroundAttachment: 'fixed' }}>
+        <div className="parallax scroll-element mt-24" data-speed="0.3" style={{ backgroundImage: 'url(/headerJJOO.png)', backgroundSize: 'contain', height: '400px', backgroundAttachment: 'fixed' }}>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
             <h1 className="text-4xl sm:text-5xl font-black text-[#5F1BBF] mt-[700px]">PARTICI[PAR]</h1>
             <p className="mt-4 text-lg sm:text-xl text-gray-700">Evolución en la participación femenina en los Juegos Olímpicos.</p>
@@ -130,9 +119,11 @@ const HomePage = () => {
         La historia del deporte está cambiando, y las mujeres están en el centro de esa transformación. <br /> La equidad en los Juegos Olímpicos no es solo un triunfo de cifras, sino una victoria simbólica <br /> en la lucha contra siglos de exclusión. Cada atleta femenina que sube al podio lleva consigo <br /> no solo su esfuerzo personal, sino el peso de <b> generaciones que soñaron con ese momento. </b> <br /> Pero este es solo el comienzo. La igualdad de oportunidades en los deportes debe ir más allá <br /> del número de participantes, se trata de garantizar que todas las niñas, en cualquier rincón del <br /> mundo, vean en el deporte un espacio que también les pertenece. <br /> ¿Estamos listos para seguir rompiendo barreras?
         </p>
         <div className="flex justify-center">
+        <a href="https://www.youtube.com/watch?v=NZ1fwWvE9IA"> 
           <button className="bg-[#5F1BBF] hover:bg-violet-300 text-white font-bold py-2 px-4 rounded mt-8">
             Conocé más sobre esta historia
           </button>
+          </a>
         </div>
         <div className='ml-[490px]'> 
         <StickyImage src="/sabiasque_5.png" alt="Gim"/>

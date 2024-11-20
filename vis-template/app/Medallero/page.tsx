@@ -4,9 +4,6 @@ import TopWomen from "./TopWomen";
 
 const Home = () => (
   <>
-    <Head>
-      <title>Top Mujeres - Juegos Olímpicos</title>
-    </Head>
     <TopWomen />
   </>
 );
