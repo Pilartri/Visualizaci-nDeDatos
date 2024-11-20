@@ -35,7 +35,7 @@ const StickyImage = ({ src, alt }: StickyImageProps) => {
   return (
     <div
       ref={stickyElementRef}
-      className={`transition-all duration-[10s] ${
+      className={`transition-all duration-[20s] ${
         isSticky ? 'translate-y-[-100vh]' : ''
       }`}
       style={{

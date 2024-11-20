@@ -26,8 +26,8 @@ const Home: React.FC = () => {
 </section>
 <StickyImage src="/femenino_JJOO.png" alt="Gim"/>
 
-<h1 className="text-center mt-8 mb-4 text-purple-800 text-4xl font-black"> "LA PROMOCIÓN DEL RESPETO <br /> Y LA IGUALDAD" </h1>
-    <h4 className="text-center text-sm mb-4"> Carta Olímpica del Comité Olímpico Internacional</h4>
+<h1 className="text-center mt-16 mb-4 text-purple-800 text-5xl font-black"> "LA PROMOCIÓN DEL RESPETO <br /> Y LA IGUALDAD" </h1>
+    <h4 className="text-center text-md mb-4"> Carta Olímpica del Comité Olímpico Internacional</h4>
 
       {/* Línea de Tiempo */}
       <HorizontalTime />

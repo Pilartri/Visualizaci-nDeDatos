@@ -32,7 +32,7 @@ const HomePage = () => {
 
       {/* Hero Section with Parallax */}
       <section className="relative">
-        <div className="parallax scroll-element mt-24" data-speed="0.3" style={{ backgroundImage: 'url(/headerJJOO.png)', backgroundSize: 'contain', height: '400px', backgroundAttachment: 'fixed' }}>
+        <div className="parallax scroll-element mt-24" data-speed="0.3" style={{ backgroundImage: 'url(/headerJJOO.png)', backgroundSize: 'cover', height: '450px', backgroundAttachment: 'fixed' }}>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
             <h1 className="text-4xl sm:text-5xl font-black text-[#5F1BBF] mt-[700px]">PARTICI[PAR]</h1>
             <p className="mt-4 text-lg sm:text-xl text-gray-700">Evolución en la participación femenina en los Juegos Olímpicos.</p>
@@ -74,14 +74,14 @@ const HomePage = () => {
     
 
       {/* Medallero */}
-      <section className="container mx-auto py-24 mt-[-50px]">
+      <section className="container mx-auto py-24 mt-[-150px]">
         <h2 className="text-3xl md:text-4xl font-black text-center mb-6 text-[#5F1BBF]">Medallero olímpico 2024</h2>
-        <p className="text-center mb-8 text-gray-600 text-lg font-thin">
+        <p className="text-center text-gray-600 text-lg font-thin">
           ¿Sabías que recién en 2024 se alcanzó <br /> la equidad de género en la competencia?
         </p>
         <StickyImage src="/sabiasque_3.png" alt="Gim"/>
         <div className="flex justify-center mb-8 mt-[-60px]">
-          <div className="max-w-4xl w-full">
+          <div className="max-w-4xl w-full mt-[-50px]">
             <FlourishEmbed2 />
           </div>
         </div>
