@@ -33,10 +33,10 @@ const StickyImage = ({ src, alt }: StickyImageProps) => {
         left: '50%', // Centrada horizontalmente
         transform: 'translateX(-50%)', // Asegura que esté centrada
         transition: 'bottom 0.4s ease-out', // Transición suave para el movimiento
-        zIndex: 10, // Asegura que esté sobre otros elementos
+        zIndex: 20, // Asegura que esté sobre otros elementos
       }}
     >
-      <Image src={src} alt={alt} width={80} height={500} priority />
+      <Image src={src} alt={alt} width={100} height={500} priority />
     </div>
   );
 };
