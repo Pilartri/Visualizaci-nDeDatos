@@ -46,14 +46,14 @@ const HomePage = () => {
             </a>
           </li>
           <li>
-            <a href="/historia" className="text-[#5F1BBF] hover:text-[#5F1BBF]">
+            <a href="/historia" className="text-[#5F1BBF] hover:text-[#616161]">
               Historia
             </a>
           </li>
           <li>
             <a
               href="/Medallero"
-              className="text-[#5F1BBF] hover:text-[#5F1BBF]"
+              className="text-[#5F1BBF] hover:text-[#616161]"
             >
               Medallero
             </a>
@@ -83,7 +83,7 @@ const HomePage = () => {
         <p className="text-center text-lg sm:text-base font-thin text-gray-600">
           ¿Sabías que recién en 2012 todos los países presentaron <br /> al menos una mujer en la competencia?
         </p> 
-        <StickyImage src="/sabiasque_1.png" alt="Gim"/>
+        <StickyImage src="/sabiasque_1.png" alt="sabiasque"/>
         <div className="flex justify-center mb-8 mt-[-60px]">
           <div className="max-w-4xl w-full">
             <FlourishEmbed />
@@ -100,7 +100,7 @@ const HomePage = () => {
           </button>
         </div>
         <div className='ml-[1000px]'> 
-        <StickyImage src="/sabiasque_2.png" alt="Gim"/>
+        <StickyImage src="/sabiasque_2.png" alt="sabiasque"/>
         </div>
       
       </section>
@@ -129,7 +129,7 @@ const HomePage = () => {
           </button>
         </div>
         <div className='ml-[1000px]'> 
-        <StickyImage src="/sabiasque_4.png" alt="Gim"/>
+        <StickyImage src="/sabiasque_4.png" alt="sabiasque"/>
         </div>
       </section>
 
@@ -149,19 +149,21 @@ const HomePage = () => {
         <h2 className="text-3xl md:text-5xl font-black text-[#5F1BBF]">PARTICI[PAR]</h2>
         <p className="text-lg text-gray-600 font-thin mt-6">¿Cómo podemos seguir impulsando la participación femenina?</p>
         <p className="text-lg font-thin text-gray-600 px-6 md:px-32 mt-4">
-        La historia del deporte está cambiando, y las mujeres están en el centro de esa transformación. <br /> La equidad en los Juegos Olímpicos no es solo un triunfo de cifras, sino una victoria simbólica <br /> en la lucha contra siglos de exclusión. Cada atleta femenina que sube al podio lleva consigo <br /> no solo su esfuerzo personal, sino el peso de <b> generaciones que soñaron con ese momento. </b> <br /> Pero este es solo el comienzo. La igualdad de oportunidades en los deportes debe ir más allá <br /> del número de participantes, se trata de garantizar que todas las niñas, en cualquier rincón del <br /> mundo, vean en el deporte un espacio que también les pertenece. <br /> ¿Estamos listos para seguir rompiendo barreras?
+        La historia del deporte está cambiando, y las mujeres están en el centro de esa transformación. <br /> La equidad en los Juegos Olímpicos no es solo un triunfo de cifras, sino una victoria simbólica <br /> en la lucha contra siglos de exclusión. Cada atleta femenina que sube al podio lleva consigo <br /> no solo su esfuerzo personal, sino el peso de <b> generaciones que soñaron con ese momento. </b> <br /> Pero este es solo el comienzo. La igualdad de oportunidades en los deportes debe ir más allá <br /> del número de participantes, se trata de garantizar que todas las niñas, en cualquier rincón del <br /> mundo, vean en el deporte un espacio que también les pertenece. <br /> <b>¿Estamos listos para seguir rompiendo barreras?</b>
         </p>
-        <div className="flex justify-center">
-          <button className="bg-[#5F1BBF] hover:bg-violet-300 text-white font-bold py-2 px-4 rounded mt-8">
-          <a href="https://www.youtube.com/watch?v=NZ1fwWvE9IA"> 
-
-            Conocé más sobre esta historia
-            </a>
-
-          </button>
-        </div>
+        <div className="flex justify-center mt-8">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/NZ1fwWvE9IA?si=Gjx3jc73co-x8SVU"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        frameBorder="0"
+        className="rounded-3xl" // Aplicando el estilo aquí
+      ></iframe>
+    </div>
         <div className='ml-[490px]'> 
-        <StickyImage src="/sabiasque_5.png" alt="Gim"/>
+        <StickyImage src="/final.png" alt="sabiasque"/>
         </div>
       </section>
 

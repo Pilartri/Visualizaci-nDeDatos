@@ -14,7 +14,7 @@ const Header: React.FC = () => {
         />
         <ul className="flex space-x-8 ml-16">
           <li>
-            <a href="/" className="text-[#5F1BBF] hover:text-[#5F1BBF]">
+            <a href="/" className="text-[#5F1BBF] hover:text-[#616161]">
               Mujeres
             </a>
           </li>
@@ -26,7 +26,7 @@ const Header: React.FC = () => {
           <li>
             <a
               href="/Medallero"
-              className="text-[#5F1BBF] hover:text-[#5F1BBF]"
+              className="text-[#5F1BBF] hover:text-[#616161]"
             >
               Medallero
             </a>

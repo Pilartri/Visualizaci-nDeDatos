@@ -16,12 +16,12 @@ export default function Header() {
         />
         <ul className="flex space-x-8 ml-16">
           <li>
-            <Link href="/" className="">
+            <Link href="/" className="text-[#5F1BBF] hover:text-[#616161]">
               Mujeres
             </Link>
           </li>
           <li>
-            <Link href="/historia" className="text-[#5F1BBF] hover:text-[#5F1BBF]">
+            <Link href="/historia" className="text-[#5F1BBF] hover:text-[#616161]">
               Historia
             </Link>
           </li>
