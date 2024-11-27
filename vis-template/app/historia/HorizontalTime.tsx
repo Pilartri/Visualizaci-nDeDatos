@@ -56,7 +56,7 @@ const HorizontalTime: React.FC = () => {
       {/* Contenedor horizontal */}
       <div
         ref={containerRef}
-        className="flex space-x-64 py-20"
+        className="flex space-x-[-120px] py-20"
         style={{
           display: "flex",
           overflowX: "hidden",
@@ -78,7 +78,7 @@ const HorizontalTime: React.FC = () => {
             alt="Olympic Women Participation"
             width={350}
             height={200}
-            className="mt-[-430px] rounded-xl"
+            className="mt-[-450px] rounded-xl"
           />
         </div>
 
@@ -97,7 +97,7 @@ const HorizontalTime: React.FC = () => {
             alt="Olympic Women Participation"
             width={350}
             height={200}
-            className="mt-[-430px] rounded-xl"
+            className="mt-[-450px] rounded-xl"
           />
         </div>
 
@@ -127,14 +127,14 @@ const HorizontalTime: React.FC = () => {
           </p>
           <p className="mt-2 ml-[400px] text-md font-light">El COI fortaleció su compromiso con la <br /> equidad de género al establecer el </p>
           <p className="mt-2 ml-[400px] text-3xl font-regular"> Programa Olímpico <br />de Mujeres y Deporte</p>
-          <p className="mt-2 ml-[400px] text-sm font-light"> cuyo objetivo principal era aumentar la participación femenina <br /> en el ámbito deportivo y proporcionar apoyo integral a las mujeres <br /> en todas las disciplinas.</p>
-          <p className="mt-2 ml-[400px] text-sm font-light"> Esta iniciativa fue una respuesta directa a la subrepresentación femenina <br /> en los deportes olímpicos y representó un avance hacia la creación de un <br /> ambiente inclusivo y equitativo en cada nueva edición de los Juegos Olímpicos.</p>
+          <p className="mt-2 ml-[400px] text-sm font-light"> cuyo objetivo principal era aumentar la participación  <br />femenina en el ámbito deportivo y proporcionar apoyo <br /> integral a las mujeres en todas las disciplinas.</p>
+          <p className="mt-2 ml-[400px] text-sm font-light"> Esta iniciativa fue una respuesta directa a la subrepresentación <br /> femenina en los deportes olímpicos y representó un avance hacia<br /> la creación de un ambiente inclusivo y equitativo en cada nueva <br />edición de los Juegos Olímpicos.</p>
           <Image
             src="/1991.png"
             alt="Olympic Women Participation"
             width={350}
             height={200}
-            className="mt-[-430px] rounded-xl"
+            className="mt-[-420px] rounded-xl"
           />
         </div>
 
@@ -144,7 +144,7 @@ const HorizontalTime: React.FC = () => {
           <p className="mt-2 text-purple-800 text-4xl font-extrabold ml-[400px]">
           Primeros Juegos Olímpicos <br /> con más de 100 eventos femeninos
           </p>
-          <p className="mt-2 ml-[400px] text-md font-light">En los Juegos Olímpicos de Atlanta, las mujeres <br />  compitieron en más de 100 eventos, una cifra sin  <br /> precedentes. Además, el softbol y el fútbol femenino <br />  debutaron como deportes olímpicos, aumentando la <br /> visibilidad de las atletas femeninas y su impacto en el evento. </p>
+          <p className="mt-2 ml-[400px] text-md font-light">En los Juegos Olímpicos de Atlanta, las mujeres  compitieron <br /> en más de 100 eventos, una cifra sin precedentes. Además, <br />el softbol y el fútbol femenino debutaron como deportes <br /> olímpicos, aumentando la visibilidad de las atletas femeninas <br />y su impacto en el evento. </p>
           <p className="mt-2 ml-[400px] text-sm font-light"> Este hito reflejó el compromiso continuo hacia la inclusión de género, <br /> permitiendo que más mujeres compitieran en disciplinas de equipo <br />  y contribuyendo al </p>
           <p className="mt-2 ml-[400px] text-3xl font-regular"> reconocimiento global de sus <br /> habilidades y logros en el deporte. </p>
           <Image
@@ -190,7 +190,7 @@ const HorizontalTime: React.FC = () => {
             alt="Olympic Women Participation"
             width={350}
             height={200}
-            className="mt-[-430px] rounded-xl"
+            className="mt-[-420px] rounded-xl"
           />
         </div>
       </div>
