@@ -28,7 +28,41 @@ const HomePage = () => {
     <div className="bg-gray-50 bg-white shadow-md">
     
        {/* Header Fijo */}
-       <Header />
+       {/* <Header /> */}
+       <section>
+       <div className="bg-white text-black fixed top-0 w-full z-40 shadow-md">
+      <div className="container mx-auto flex items-center p-4">
+        <Image
+          className="ml-[-50px]"
+          src="/logo_par.svg"
+          alt="Olympic Women Participation"
+          width={45}
+          height={45}
+        />
+        <ul className="flex space-x-8 ml-16">
+          <li>
+            <a href="/" className="bg-violet-100 hover:bg-violet-300 text-[#5F1BBF] rounded px-2 py-1">
+              Mujeres
+            </a>
+          </li>
+          <li>
+            <a href="historia" className="text-[#5F1BBF] hover:text-[#5F1BBF]">
+              Historia
+            </a>
+          </li>
+          <li>
+            <a
+              href="medallero"
+              className="text-[#5F1BBF] hover:text-[#5F1BBF]"
+            >
+              Medallero
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+       </section>
+       
 
       {/* Hero Section with Parallax */}
       <section className="relative">
@@ -60,11 +94,11 @@ const HomePage = () => {
           Un viaje a través de los años, una evolución que recién comienza. <br /> <b> 30 ediciones de los Juegos Olímpicos </b> en busca de la igualdad <br /> de oportunidades y participación.
         </p>
         <div className="flex justify-center">
-        <a href="historia"> 
           <button className="bg-[#5F1BBF] hover:bg-violet-300 text-white font-bold py-2 px-4 rounded mt-4">
+          <a href="historia"> 
             Conocé más 
+            </a>
           </button>
-          </a>
         </div>
         <div className='ml-[1000px]'> 
         <StickyImage src="/sabiasque_2.png" alt="Gim"/>
@@ -89,11 +123,11 @@ const HomePage = () => {
         Miles de mujeres a lo largo del mundo mostrando una vez más lo que son capaces<br />de hacer. <b> Un medallero que conmociona.</b> Grandes atletas batiendo récords <br /> y posicionándose en lo más alto del ranking mundial.
         </p>
         <div className="flex justify-center">
-        <a href="medallero"> 
           <button className="bg-[#5F1BBF] hover:bg-violet-300 text-white font-bold py-2 px-4 rounded mt-4">
+          <a href="medallero"> 
             Conocé más
+            </a>
           </button>
-          </a>
         </div>
         <div className='ml-[1000px]'> 
         <StickyImage src="/sabiasque_4.png" alt="Gim"/>
@@ -106,7 +140,7 @@ const HomePage = () => {
           src="./separadores-20.svg" 
           alt="Separador"
           width={400}
-          height={0}
+          height={400}
           className="w-1/2 sm:w-1/4"
         />
       </div>
@@ -119,11 +153,13 @@ const HomePage = () => {
         La historia del deporte está cambiando, y las mujeres están en el centro de esa transformación. <br /> La equidad en los Juegos Olímpicos no es solo un triunfo de cifras, sino una victoria simbólica <br /> en la lucha contra siglos de exclusión. Cada atleta femenina que sube al podio lleva consigo <br /> no solo su esfuerzo personal, sino el peso de <b> generaciones que soñaron con ese momento. </b> <br /> Pero este es solo el comienzo. La igualdad de oportunidades en los deportes debe ir más allá <br /> del número de participantes, se trata de garantizar que todas las niñas, en cualquier rincón del <br /> mundo, vean en el deporte un espacio que también les pertenece. <br /> ¿Estamos listos para seguir rompiendo barreras?
         </p>
         <div className="flex justify-center">
-        <a href="https://www.youtube.com/watch?v=NZ1fwWvE9IA"> 
           <button className="bg-[#5F1BBF] hover:bg-violet-300 text-white font-bold py-2 px-4 rounded mt-8">
+          <a href="https://www.youtube.com/watch?v=NZ1fwWvE9IA"> 
+
             Conocé más sobre esta historia
+            </a>
+
           </button>
-          </a>
         </div>
         <div className='ml-[490px]'> 
         <StickyImage src="/sabiasque_5.png" alt="Gim"/>
@@ -132,7 +168,7 @@ const HomePage = () => {
 
       <footer className="py-8 bg-gray-100">
         <div className="container mx-auto text-center text-gray-600">
-          &copy; {new Date().getFullYear()} Participación Olímpica. Todos los derechos reservados.
+        &copy; 2024 Participación Olímpica. Todos los derechos reservados.
         </div>
       </footer>
     </div>

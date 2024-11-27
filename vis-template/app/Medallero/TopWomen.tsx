@@ -78,7 +78,6 @@ const athletes: AthleteProps[] = [
 export const TopWomen: React.FC = () => (
   <div className="bg-white">
        {/* Header Fijo */}
-       <Header />
       {/* Hero Section */}
       <section>
         <Image

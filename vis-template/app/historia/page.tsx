@@ -10,7 +10,9 @@ const Home: React.FC = () => {
   return (
     <div className="bg-white">
       {/* Header Fijo */}
+      <section>
       <Header />
+      </section>
 
   <section className="pt-20">
   <div className="relative w-full">

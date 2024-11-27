@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 
 const FlourishEmbed2 = () => {
   useEffect(() => {
+    if (typeof window === 'undefined') return; // Previene la ejecución en SSR
+
     const script = document.createElement('script');
     script.src = 'https://public.flourish.studio/resources/embed.js';
     script.async = true;
