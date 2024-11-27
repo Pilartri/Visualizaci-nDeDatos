@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Header from "./Header";
-import AthleteCard from "./AthleteCard";
-import { AthleteProps } from "./athlete";
+import Header from "@/app/medallero/Header";
+import AthleteCard from "@/app/medallero/AthleteCard";
+import { AthleteProps } from "@/app/medallero/athlete";
 
 const athletes: AthleteProps[] = [
   {
