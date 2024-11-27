@@ -163,7 +163,7 @@ const HomePage = () => {
       ></iframe>
     </div>
         <div className='ml-[490px]'> 
-        <StickyImage src="/final.png" alt="sabiasque"/>
+        <StickyImage src="/sabiasque_5.png" alt="sabiasque"/>
         </div>
       </section>
 

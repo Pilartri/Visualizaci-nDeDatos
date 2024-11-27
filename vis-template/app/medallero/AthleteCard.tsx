@@ -7,7 +7,7 @@ import { AthleteProps } from "./athlete";
 export default function AthleteCard({ 
   name, 
   sport, 
-  country, 
+  imageCount,  
   imagePrl, 
   description, 
   imageSrc, 
@@ -22,6 +22,7 @@ export default function AthleteCard({
       transition={{ duration: 1.2, ease: "easeOut" }}
       viewport={{ once: false, margin: "-100px" }}
     >
+      
       <Image 
         src={imageSrc} 
         alt={name} 
@@ -30,7 +31,14 @@ export default function AthleteCard({
         className="rounded-lg mx-auto" 
       />
       <h2 className="text-4xl font-bold mt-4">{name}</h2>
-      <p className="text-xl font-semibold mb-4">{sport}</p>
+      <p className="text-xl font-semibold">{sport}</p>
+      <Image 
+        src={imageCount} 
+        alt={name} 
+        width={50} 
+        height={200} 
+        className="rounded-lg mx-auto mb-2" 
+      />
       <Image 
         src={imageTop} 
         alt={name} 
@@ -38,13 +46,12 @@ export default function AthleteCard({
         height={200} 
         className="rounded-lg mx-auto" 
       />
-      <p className="underline mt-4 text-lg">{country}</p>
       <Image 
         src={imagePrl} 
         alt={name} 
         width={100} 
         height={200} 
-        className="rounded-lg mx-auto" 
+        className="rounded-lg mx-auto mt-2" 
       />
       <p className="mt-4 max-w-lg mx-auto mb-24">{description}</p>
     </motion.div>

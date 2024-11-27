@@ -1,7 +1,7 @@
 export type AthleteProps = {
     name: string;
     sport: string;
-    country: string;
+    imageCount: string;
     imagePrl: string;
     medals: number[];
     description: string;
