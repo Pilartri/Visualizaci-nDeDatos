@@ -74,8 +74,8 @@ const athletes: AthleteProps[] = [
   
 ];
 
-export default function Medallero() {
-return(  
+const Home: React.FC = () => {
+  return(  
   <div className="bg-white">
     <section>
        <div className="bg-white text-black fixed top-0 w-full z-40 shadow-md">
@@ -163,4 +163,7 @@ return(
         </div>
       </footer>
   </div>
-)};
+);
+};
+
+export default Home;
