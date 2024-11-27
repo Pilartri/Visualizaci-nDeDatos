@@ -94,13 +94,13 @@ return(
             </a>
           </li>
           <li>
-            <a href="historia" className="text-[#5F1BBF] hover:text-[#5F1BBF]">
+            <a href="/historia" className="text-[#5F1BBF] hover:text-[#5F1BBF]">
               Historia
             </a>
           </li>
           <li>
             <a
-              href="medallero"
+              href="/medallero"
               className="text-[#5F1BBF] hover:text-[#5F1BBF]"
             >
               Medallero
