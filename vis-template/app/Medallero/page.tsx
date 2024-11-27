@@ -1,19 +1,9 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
-
-type AthleteProps = {
-  name: string;
-  sport: string;
-  country: string;
-  imagePrl: string;
-  medals: number[];
-  description: string;
-  imageSrc: string;
-  imageTop: string;
-};
+import Header from "./Header";
+import AthleteCard from "./AthleteCard";
+import { AthleteProps } from "./athlete";
 
 const athletes: AthleteProps[] = [
   {
@@ -74,44 +64,11 @@ const athletes: AthleteProps[] = [
   
 ];
 
-const Home: React.FC = () => {
-  return(  
-  <div className="bg-white">
-    <section>
-       <div className="bg-white text-black fixed top-0 w-full z-40 shadow-md">
-      <div className="container mx-auto flex items-center p-4">
-        <Image
-          className="ml-[-50px]"
-          src="/logo_par.svg"
-          alt="Olympic Women Participation"
-          width={45}
-          height={45}
-        />
-        <ul className="flex space-x-8 ml-16">
-          <li>
-            <a href="/" className="bg-violet-100 hover:bg-violet-300 text-[#5F1BBF] rounded px-2 py-1">
-              Mujeres
-            </a>
-          </li>
-          <li>
-            <a href="/historia" className="text-[#5F1BBF] hover:text-[#5F1BBF]">
-              Historia
-            </a>
-          </li>
-          <li>
-            <a
-              href="/medallero"
-              className="text-[#5F1BBF] hover:text-[#5F1BBF]"
-            >
-              Medallero
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-       </section>
-       {/* Header Fijo */}
-      {/* Hero Section */}
+export default function Home() {
+  return (
+    <div className="bg-white">
+      <Header />
+      
       <section>
         <Image
           src="/medalleros.png" 
@@ -124,46 +81,34 @@ const Home: React.FC = () => {
         />
       </section>
    
-    <h1 className="font-black text-5xl text-purple-800 text-center mt-16"> TOP MUJERES </h1>
-    <h4 className="text-center mb-4"> destacadas en los Juegos Olímpicos 2024</h4>
-    <h4 className="text-center text-sm font-bold mb-2"> medallas </h4>
-    <Image 
-          src="/medallasinicio-43.png" 
-          alt="Olympic Women Participation"
-          width={200}
-          height={200}
-          className="z-10 ml-[620px]"
-        />
-    <section className="mt-8 p-4">
-      {athletes.map((athlete, index) => (
-      <motion.div
-      key={index}
-      className="athlete-section my-12 text-center"
-      initial={{ opacity: 0, y: 50 }}  // Empieza oculto y desplazado hacia abajo
-      whileInView={{ opacity: 1, y: 0 }}  // Aparece cuando está en vista
-      exit={{ opacity: 0, y: -50 }}  // Desaparece al desplazarse fuera de la vista
-      transition={{ duration: 1.2, ease: "easeOut" }}  // Transición suave
-      viewport={{ once: false, margin: "-100px" }}  // Repite la animación
-    >
-          <Image src={athlete.imageSrc} alt={athlete.name} width={250} height={200} className="rounded-lg mx-auto" />
-          <h2 className="text-4xl font-bold mt-4">{athlete.name}</h2>
-          <p className="text-xl font-semibold mb-4">{athlete.sport} </p>
-         < Image src={athlete.imageTop} alt={athlete.name} width={200} height={200} className="rounded-lg mx-auto" />
-          <p className="underline mt-4 text-lg;">{athlete.country}</p>
-          <div className="flex justify-left mt-2 space-x-2">
-          </div>
-          < Image src={athlete.imagePrl} alt={athlete.name} width={100} height={200} className="rounded-lg mx-auto" />
-          <p className="mt-4 max-w-lg mx-auto mb-24">{athlete.description}</p>
-        </motion.div>
-      ))}
-    </section>
-    <footer className="py-8 bg-gray-100">
+      <h1 className="font-black text-5xl text-purple-800 text-center mt-16">
+        TOP MUJERES
+      </h1>
+      <h4 className="text-center mb-4">
+        destacadas en los Juegos Olímpicos 2024
+      </h4>
+      <h4 className="text-center text-sm font-bold mb-2">
+        medallas
+      </h4>
+      <Image 
+        src="/medallasinicio-43.png" 
+        alt="Olympic Women Participation"
+        width={200}
+        height={200}
+        className="z-10 ml-[620px]"
+      />
+      
+      <section className="mt-8 p-4">
+        {athletes.map((athlete, index) => (
+          <AthleteCard key={index} {...athlete} />
+        ))}
+      </section>
+      
+      <footer className="py-8 bg-gray-100">
         <div className="container mx-auto text-center text-gray-600">
           &copy; {new Date().getFullYear()} Participación Olímpica. Todos los derechos reservados.
         </div>
       </footer>
-  </div>
-);
-};
-
-export default Home;
+    </div>
+  );
+}
