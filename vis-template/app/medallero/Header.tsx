@@ -27,7 +27,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              href="/medallero"
+              href="/Medallero"
               className="bg-violet-100 hover:bg-violet-300 text-[#5F1BBF] rounded px-2 py-1"
             >
               Medallero
