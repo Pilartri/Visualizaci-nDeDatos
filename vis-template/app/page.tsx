@@ -62,7 +62,6 @@ const HomePage = () => {
       </div>
     </div>
        </section>
-       
 
       {/* Hero Section with Parallax */}
       <section className="relative">
