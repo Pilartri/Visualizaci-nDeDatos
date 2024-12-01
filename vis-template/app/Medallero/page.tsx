@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Header from "@/app/medallero/Header";
 import AthleteCard from "@/app/medallero/AthleteCard";
-import StickyImage from './Sticky';  
+import StickyImage from '@/app/medallero/Sticky';  
 import { AthleteProps } from "@/app/medallero/athlete";
 
 const athletes: AthleteProps[] = [
