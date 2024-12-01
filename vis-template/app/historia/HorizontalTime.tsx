@@ -53,6 +53,11 @@ const HorizontalTime: React.FC = () => {
 
   return (
     <div ref={sectionRef} className="relative mt-40 overflow-hidden h-screen">
+      <div className="flex space-x-[1260px] mb-[-24px] ml-16">
+      <div className="w-10 h-10 bg-purple-800 rounded-full"></div>
+      <div className="w-10 h-10 bg-purple-800 rounded-full"></div>
+      </div>
+      <hr className="border-0 h-[5px] w-[200vw] bg-purple-800 mb-[-50px]" />
       {/* Contenedor horizontal */}
       <div
         ref={containerRef}
@@ -63,7 +68,8 @@ const HorizontalTime: React.FC = () => {
           width: "100%", // Ancho total del contenido horizontal
           height: "100%", // Altura completa del contenedor
         }}
-      >
+        >
+        
         {/* Año 1900 */}
         <div className="w-screen flex-shrink-0 ml-16">
           <div className="text-purple-800 text-7xl font-extrabold ml-[400px]">1900</div>

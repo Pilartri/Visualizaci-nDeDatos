@@ -145,7 +145,7 @@ const HomePage = () => {
       </div>
 
       {/* Conclusión */}
-      <section className="container mx-auto py-24 text-center">
+      <section className="container mx-auto py-24 text-center mt-[-60px]">
         <h2 className="text-3xl md:text-5xl font-black text-[#5F1BBF]">PARTICI[PAR]</h2>
         <p className="text-lg text-gray-600 font-thin mt-6">¿Cómo podemos seguir impulsando la participación femenina?</p>
         <p className="text-lg font-thin text-gray-600 px-6 md:px-32 mt-4">
@@ -162,9 +162,7 @@ const HomePage = () => {
         className="rounded-3xl" // Aplicando el estilo aquí
       ></iframe>
     </div>
-        <div className='ml-[490px]'> 
-        <StickyImage src="/frase.png" alt="sabiasque"/>
-        </div>
+        
       </section>
 
       <footer className="py-8 bg-gray-100">
