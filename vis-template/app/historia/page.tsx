@@ -1,5 +1,4 @@
 "use client";
-// pages/index.tsx
 import Header from "./Header";
 import StickyImage from './Sticky';  
 import HorizontalTime from "./HorizontalTime";
@@ -26,7 +25,7 @@ const Home: React.FC = () => {
     />
   </div>
 </section>
-<StickyImage src="/femenino_JJOO.png" alt="Gim"/>
+<StickyImage src="/abajo.png" alt="flecha_abajo"/>
 
 <h1 className="text-center mt-16 mb-4 text-purple-800 text-5xl font-black"> "LA PROMOCIÓN DEL RESPETO <br /> Y LA IGUALDAD" </h1>
     <h4 className="text-center text-md mb-4"> Carta Olímpica del Comité Olímpico Internacional</h4>

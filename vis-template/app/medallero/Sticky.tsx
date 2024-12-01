@@ -7,7 +7,7 @@ interface StickyImageProps {
 }
 
 const StickyImage = ({ src, alt }: StickyImageProps) => {
-  const [offset, setOffset] = useState(0);
+  const [offset, setOffset] = useState(0); 
   const stickyElementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

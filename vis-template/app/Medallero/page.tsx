@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Header from "@/app/medallero/Header";
 import AthleteCard from "@/app/medallero/AthleteCard";
+import StickyImage from './Sticky';  
 import { AthleteProps } from "@/app/medallero/athlete";
 
 const athletes: AthleteProps[] = [
@@ -97,6 +98,7 @@ export default function Home() {
         height={200}
         className="z-10 ml-[620px]"
       />
+      <StickyImage src="/abajo.png" alt="flecha_abajo"/>
       
       <section className="mt-8 p-4">
         {athletes.map((athlete, index) => (

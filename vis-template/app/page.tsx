@@ -28,7 +28,6 @@ const HomePage = () => {
     <div className="bg-gray-50 bg-white shadow-md">
     
        {/* Header Fijo */}
-       {/* <Header /> */}
        <section>
        <div className="bg-white text-black fixed top-0 w-full z-40 shadow-md">
       <div className="container mx-auto flex items-center p-4">
@@ -159,7 +158,7 @@ const HomePage = () => {
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         frameBorder="0"
-        className="rounded-3xl" // Aplicando el estilo aquí
+        className="rounded-3xl" 
       ></iframe>
     </div>
         

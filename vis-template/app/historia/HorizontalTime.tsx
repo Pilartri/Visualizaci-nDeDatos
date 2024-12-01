@@ -14,7 +14,6 @@ const HorizontalTime: React.FC = () => {
       const section = sectionRef.current;
       const container = containerRef.current;
 
-      // Calcula si el componente está en el centro del viewport
       const sectionRect = section.getBoundingClientRect();
       const viewportHeight = window.innerHeight;
 
@@ -23,23 +22,20 @@ const HorizontalTime: React.FC = () => {
         sectionRect.bottom >= viewportHeight / 2;
 
       if (isInCenter) {
-        e.preventDefault(); // Evita el scroll vertical dentro del componente
+        e.preventDefault(); 
 
-        // Movimiento horizontal basado en el delta del scroll
         const horizontalScrollAmount = e.deltaY;
         container.scrollLeft += horizontalScrollAmount;
 
-        // Permite el scroll hacia arriba si está en la posición inicial (x = 0)
         if (container.scrollLeft === 0 && horizontalScrollAmount < 0) {
-          window.scrollBy(0, e.deltaY); // Habilita el scroll hacia arriba
+          window.scrollBy(0, e.deltaY); 
         }
 
-        // Permite el scroll hacia abajo si se llega al final del contenido
         if (
           container.scrollLeft >= container.scrollWidth - container.clientWidth &&
           horizontalScrollAmount > 0
         ) {
-          window.scrollBy(0, e.deltaY); // Habilita el scroll hacia abajo
+          window.scrollBy(0, e.deltaY);
         }
       }
     };
@@ -53,11 +49,12 @@ const HorizontalTime: React.FC = () => {
 
   return (
     <div ref={sectionRef} className="relative mt-40 overflow-hidden h-screen">
+      {/* linea de tiempo */}
       <div className="flex space-x-[1260px] mb-[-24px] ml-16">
       <div className="w-10 h-10 bg-purple-800 rounded-full"></div>
       <div className="w-10 h-10 bg-purple-800 rounded-full"></div>
       </div>
-      <hr className="border-0 h-[5px] w-[200vw] bg-purple-800 mb-[-50px]" />
+      <hr className="border-0 h-[5px] w-[200vw] bg-purple-800 mb-[-40px]" />
       {/* Contenedor horizontal */}
       <div
         ref={containerRef}
@@ -65,8 +62,8 @@ const HorizontalTime: React.FC = () => {
         style={{
           display: "flex",
           overflowX: "hidden",
-          width: "100%", // Ancho total del contenido horizontal
-          height: "100%", // Altura completa del contenedor
+          width: "100%", 
+          height: "100%", 
         }}
         >
         
