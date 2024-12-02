@@ -30,8 +30,8 @@ export default function AthleteCard({
         height={200} 
         className="rounded-lg mx-auto" 
       />
-      <h2 className="text-4xl font-bold mt-4">{name}</h2>
-      <p className="text-xl font-semibold">{sport}</p>
+      <h2 className="text-4xl font-bold text-gray-900 mt-4">{name}</h2>
+      <p className="text-xl font-semibold text-gray-900">{sport}</p>
       <Image 
         src={imageCount} 
         alt={name} 
@@ -53,7 +53,7 @@ export default function AthleteCard({
         height={200} 
         className="rounded-lg mx-auto mt-2" 
       />
-      <p className="mt-4 max-w-lg mx-auto mb-24">{description}</p>
+      <p className="mt-4 max-w-lg mx-auto mb-24 text-gray-900">{description}</p>
     </motion.div>
   );
 }

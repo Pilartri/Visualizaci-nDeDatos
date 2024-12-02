@@ -85,10 +85,10 @@ export default function Home() {
       <h1 className="font-black text-5xl text-purple-800 text-center mt-16">
         TOP MUJERES
       </h1>
-      <h4 className="text-center mb-4">
+      <h4 className="text-center text-gray-900 mb-4">
         destacadas en los Juegos Olímpicos 2024
       </h4>
-      <h4 className="text-center text-sm font-bold mb-2">
+      <h4 className="text-center text-sm font-bold text-gray-900 mb-2">
         medallas
       </h4>
       <Image 
